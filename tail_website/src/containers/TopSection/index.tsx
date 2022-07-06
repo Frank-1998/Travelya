@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
+import { NavBar } from "../../components/NavBar";
+import BgImage from "../../images/indonesia-high-res.jpg";
 
 const TopSectionContainer = styled.div`
     ${tw`
@@ -12,6 +14,25 @@ const TopSectionContainer = styled.div`
     `};
 `;
 
+const LandingSection = styled.div`
+    ${tw`
+        w-full
+        h-screen
+        flex
+        flex-col
+    `};
+
+    background-image: url(${BgImage}),
+        linear-gradient(to left, #005b9c, #b1d1b148);
+        background-size: cover;
+        background-position: bottom 10% left;
+        background-blend-mod: overlay;
+`;
+
 export function TopSection() {
-    return <TopSectionContainer></TopSectionContainer>;
+    return <TopSectionContainer>
+        <LandingSection>
+            <NavBar/>
+        </LandingSection>
+    </TopSectionContainer>;
 }

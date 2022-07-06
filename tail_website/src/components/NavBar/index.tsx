@@ -3,6 +3,10 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { Logo } from "../logo";
 import { Link } from "react-scroll";
+import { useMediaQuery } from "react-responsive";
+import { deviceSize } from "../responsive";
+import { slide as Menu } from "react-burger-menu";
+import styles from "./menuStyles";
 
 const Container = styled.div`
     color: red
@@ -54,13 +58,27 @@ const NavItem = tw.li`
 
 export function NavBar() {
 
-    const navItems = <NavItems>
+    const isMobile = useMediaQuery({ maxWidth: deviceSize.mobile});
+
+    const navItems = (
+    <NavItems>
         <NavItem>
             <Link to="Home">Home</Link>
         </NavItem>
+        <NavItem>
+            <Link to="Explore">Explore</Link>
+        </NavItem>
+        <NavItem>
+            <Link to="TravelPlaces">Travel Places</Link>
+        </NavItem>
     </NavItems>
+    );
 
     return <Container>
         <Logo />
+        {isMobile && <Menu right styles={styles}>
+            {navItems}
+        </Menu>}
+        {!isMobile && navItems}
     </Container>
 };
