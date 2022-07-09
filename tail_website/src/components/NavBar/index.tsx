@@ -15,7 +15,7 @@ const Container = styled.div`
         h-20
         pl-6
         pr-6
-        pt-4
+        pt-10
         border-b-2
         border-gray-200
         border-opacity-50

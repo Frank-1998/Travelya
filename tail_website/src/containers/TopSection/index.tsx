@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { NavBar } from "../../components/NavBar";
 import BgImage from "../../images/indonesia-high-res.jpg";
+import LinearGradient from 'react-native-linear-gradient';
 
 const TopSectionContainer = styled.div`
     ${tw`
@@ -22,17 +23,23 @@ const LandingSection = styled.div`
         flex-col
     `};
 
-    background-image: url(${BgImage}),
-        linear-gradient(to left, #005b9c, #b1d1b148);
+    
+    background-image: url(${BgImage});
         background-size: cover;
         background-position: bottom 10% left;
         background-blend-mod: overlay;
 `;
 
+const Gradient = styled.div`
+    background: linear-gradient(45deg, blue, red);
+;`
+
 export function TopSection() {
     return <TopSectionContainer>
         <LandingSection>
-            <NavBar/>
+            <Gradient>
+                <NavBar/>
+            </Gradient>
         </LandingSection>
     </TopSectionContainer>;
 }
