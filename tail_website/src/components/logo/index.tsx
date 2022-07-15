@@ -5,7 +5,7 @@ import tw from "twin.macro";
 const LogoContainer = styled.div`
 
     ${tw`
-        font-family["ZCOOL Kuaile"]
+        font-family['papyrus']
         font-black
         text-2xl
         text-white

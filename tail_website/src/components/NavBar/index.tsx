@@ -9,13 +9,13 @@ import { slide as Menu } from "react-burger-menu";
 import styles from "./menuStyles";
 
 const Container = styled.div`
-    color: red
     ${tw`
         flex
         h-20
         pl-6
         pr-6
         pt-10
+        w-[90%]
         border-b-2
         border-gray-200
         border-opacity-50
@@ -31,6 +31,7 @@ const NavItems = tw.ul`
     w-full
     h-auto
     lg:h-full
+    lg:w-auto
     flex
     lg:ml-20
     justify-center
@@ -50,11 +51,15 @@ const NavItem = tw.li`
     lg:text-base
     transition-colors
     transition-duration[300ms]
-    hover:text-gray-300
+    hover:text-gray-200
     box-content
     mb-2
     lg:mb-0
 `;
+
+
+
+
 
 export function NavBar() {
 
