@@ -105,11 +105,13 @@ const OutlinedTextSvg = styled.svg`
 
 const DescriptionText = styled.p`
     ${tw`
+        
         text-lg
         text-white
         text-opacity-80
         mt-10
-        max-w-lg
+        max-w-sm
+        lg:max-w-lg
         2xl:max-w-xl
     `};
 `;
