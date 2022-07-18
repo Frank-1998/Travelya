@@ -197,7 +197,9 @@ export function Footer(){
                 </RightInnerContainer>
             </InnerContainer>
             <BottomSection>
-                <Copyright>Copy rights</Copyright>
+                <Copyright>
+                    © {new Date().getFullYear()} TRAVELYA. All rights reserved.
+                </Copyright>
                 <SmallText>
                     <a href="#">
                         Terms of Service

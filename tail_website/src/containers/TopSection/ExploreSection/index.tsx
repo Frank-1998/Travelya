@@ -4,13 +4,13 @@ import tw from "twin.macro";
 import { Element } from "react-scroll";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
 // Images
 import BaliTempleImg from "../../../images/bali-temple.jpg";
 import RiceTerraceImg from "../../../images/rice-terrace.jpg";
 import ExoticBromoImg from "../../../images/exotic-bromo.jpg";
 import MaleMaldivesImg from "../../../images/male-maldives.jpg";
 import IceTeaImg from "../../../images/ice-tea.jpg";
+
 
 const ExploreSectionContainer = tw(Element)`
     w-full
@@ -23,6 +23,7 @@ const ExploreSectionContainer = tw(Element)`
     xl:pt-2
     xl:pb-2
     items-center
+    
 `;
 
 
