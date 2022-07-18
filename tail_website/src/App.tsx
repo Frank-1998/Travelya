@@ -4,6 +4,7 @@ import './App.css';
 import tw from "twin.macro"
 import { TopSection } from './containers/TopSection';
 import { ExploreSection } from './containers/TopSection/ExploreSection';
+import { Footer } from './components/footer';
 
 
 const AppContainer = tw.div`
@@ -19,8 +20,16 @@ function App() {
     <AppContainer>
       <TopSection></TopSection>
       <ExploreSection></ExploreSection>
+      <Footer></Footer>
     </AppContainer>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
