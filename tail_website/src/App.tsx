@@ -17,7 +17,7 @@ const AppContainer = tw.div`
 
 function App() {
   return (
-    <AppContainer>
+    <AppContainer className='Home'>
       <TopSection></TopSection>
       <ExploreSection></ExploreSection>
       <Footer></Footer>
